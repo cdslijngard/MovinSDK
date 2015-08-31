@@ -1,4 +1,4 @@
-Android-SDK
+MovinSDK
 ===========
 
 This repository contains the compiled binary files used to integrate the MovinSDK in your app.
