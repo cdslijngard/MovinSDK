@@ -1,0 +1,19 @@
+Release notes of version 1.1.0
+
+New features:
+ * Implemented analytics to gather anonymous location data;
+ * MapID validation at [MovinSDK initialize...];
+ * Improved stability;
+ * Developers are free to choose what kind of location usage is needed, the SDK supports both "Always" and "When in use"
+ 	The message shown is based on the property set in the apps info.plist file (NSLocationAlwaysUsageDescription vs NSLocationWhenInUseUsageDescription)
+ 
+Changes:
+ * For initialization a MapID is mandatory;
+ * HTTP requests are updated to be conform the current server version.
+ 
+Bug fixes:
+ * None
+ 
+Known issues:
+ * Bitcode has not yet been generated for the library, apps using this library should disable bitcode in the build settings
+ * The server does not support valid HTTPS requests yet, so this needs to be addressed in iOS 9 apps. (See this SO article: http://stackoverflow.com/questions/30731785/how-do-i-load-an-http-url-with-app-transport-security-enabled-in-ios-9)
